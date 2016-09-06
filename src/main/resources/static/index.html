@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Crud App</title>
+    <base href="/">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body ng-app="simplecrud">
+    <div class="row">
+        <div class="col-md-2">
+            <ul class="nav nav-stacked sidenav">
+                <li><a ui-sref="users.list">List Users</a></li>
+                <li><a ui-sref="users.create">Create User</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <div ui-view></div>
+        </div>
+    </div>
+</body>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="node_modules/angular-resource/angular-resource.min.js"></script>
+<script src="js/app.js"></script>
+
+<script src="controllers/users-controller.js"></script>
+<script src="controllers/create-user-controller.js"></script>
+<script src="controllers/update-user-controller.js"></script>
+
+<script src="services/user-service.js"></script>
+
+</html>

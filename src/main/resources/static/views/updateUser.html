@@ -1,0 +1,18 @@
+<h2>Update User</h2>
+
+<form ng-submit="updateUser.updateUser()">
+    <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" class="form-control" id="firstName" ng-model="updateUser.user.firstName">
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-control" id="lastName" ng-model="updateUser.user.lastName">
+    </div>
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" class="form-control" id="age" ng-model="updateUser.user.age">
+    </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
